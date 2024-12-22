@@ -1,3 +1,10 @@
+// Option = may be there is something, maybe there's not
+
+// pub enum Option<T> {
+//     Some(T),
+//     None,
+// }
+
 fn take_fifth(value: Vec<i32>) -> Option<i32> {
     if value.len() < 5 {
         None

@@ -20,7 +20,7 @@
 
 fn main() {
     explain_string();
-    print_charecter();
+    print_character();
 }
 
 fn explain_string() {
@@ -39,13 +39,13 @@ fn explain_string() {
     println!("s is {}, world = {}", s, world);
 }
 
-fn print_charecter() {
+fn print_character() {
     let greeting: String = String::from("hello sandip");
 
     let char1 = greeting.chars().nth(0);
 
     match char1 {
         Some(c) => println!("{}", c),
-        None => println!("No chracter is index 0"),
+        None => println!("No character is index 0"),
     }
 }

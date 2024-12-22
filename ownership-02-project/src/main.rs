@@ -46,7 +46,7 @@ fn main() {
         println!("s5: {}", s5)
     }
 
-    /*  you can't have mut reference if imutable reference already exists */
+    /*  you can't have mut reference if immutable reference already exists */
     {
         let mut s: String = String::from("King");
 
@@ -89,8 +89,8 @@ fn takes_and_gives_back_ownership(a_string: String) -> String {
  * references are immutable by default
  */
 fn calculate_length(s: &String) -> usize {
-    let lenght = s.len(); // len() returns length of a string
-    lenght
+    let length = s.len(); // len() returns size of a string in bytes
+    length
 }
 
 // Mutable reference

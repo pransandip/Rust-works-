@@ -40,13 +40,16 @@ fn scope() {
         println!("z is {}", z);
     }
     let z: u8 = z + 2;
+
     println!("z is {}", z);
 }
 
 // len() gives the size is bytes
+// len() returns size of a string in bytes
 // char length will be four bytes in size
 fn check_bytes1() {
-    println!("{}", "a".len()); // These are strings not char because it is in double quotes and string can be any sort of length
+    println!("{}", "a".len()); // These are strings not char because it is in double quotes and string can be any sort of length in size
+    println!("{}", "ƒoo".len()); // 4 bytes
     println!("{}", "ą".len());
     println!("{}", "£".len());
     println!("{}", "Ⅴ".len());

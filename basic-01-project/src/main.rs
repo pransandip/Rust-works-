@@ -7,7 +7,7 @@
 * Rust has two primitive compound types: tuples and arrays.
 */
 
-// 1. Tuple is fixed length sequence of elements that is imutable
+// 1. Tuple is fixed length sequence of elements that is immutable
 // 2. arrays have to have same element inside
 
 // 1. You have four spaces before println!()
@@ -55,7 +55,7 @@ fn main() {
     // overflow
     let mut x: i8 = 10;
 
-    // If you have run time logic compliler not going to check it
+    // If you have run time logic compiler not going to check it
     for _i in 0..1000 {
         x = x + 100;
     }

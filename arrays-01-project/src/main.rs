@@ -1,4 +1,4 @@
-// Collection Types: arrays, vectors <Vecs>
+// Collection Types: arrays, vectors <Vec>
 //                 ARRAYS
 
 fn main() {

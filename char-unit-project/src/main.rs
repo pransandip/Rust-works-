@@ -11,8 +11,8 @@ fn check_size() {
     println!("success!")
 }
 
-// 1. string will be in double qoutes
-// 2. char will be in single qoutes
+// 1. string will be in double quotes
+// 2. char will be in single quotes
 
 fn print_char(c: char) {
     println!("{}", c)

@@ -17,7 +17,7 @@ fn main() {
 fn value_ref() {
     let my_number = 8;
     let my_reference = &my_number;
-    println!("{}", my_number == *my_reference); // valu of reference
+    println!("{}", my_number == *my_reference); // value of reference
 }
 
 // Mutable reference
@@ -64,15 +64,15 @@ fn first_word(s: &String) -> usize {
 // Slice
 fn string_slices() {
     let s = String::from("hello world");
-    let _hello = &s[..5]; // if we starting begining of the string we can omit 0
-    let _world = &s[6..11]; // if our range continious to the end of the string can omit 11
+    let _hello = &s[..5]; // if we starting beginning of the string we can omit 0
+    let _world = &s[6..11]; // if our range continuous to the end of the string can omit 11
     let _hello_world = &s[..];
 
     let word = first_word_2(&s);
     println!("word2: {}", word);
 }
 
-// String reference (&s) automaically coworks to string slice (&str)
+// String reference (&s) automatically co-works to string slice (&str)
 fn first_word_2(s: &str) -> &str {
     let bytes = s.as_bytes();
 

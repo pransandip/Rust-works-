@@ -1,0 +1,6 @@
+[package]
+name = "option-02-project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

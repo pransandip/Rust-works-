@@ -1,3 +1,18 @@
+//                                      VECTORS
+
+// Vectors are resizable arrays. They are useful when you have a list of items that you want to grow or shrink.
+
+// Vectors are re-sizable arrays. Like slices, their size is not known at compile time,
+// but they can grow or shrink at any time. A vector is represented using 3 parameters:
+
+// 1.) pointer to the data
+// 2.) length
+// 3.) capacity
+
+// The capacity indicates how much memory is reserved for the vector.
+// The vector can grow as long as the length is smaller than the capacity.
+// When this threshold needs to be surpassed, the vector is reallocated with a larger capacity.
+
 fn main() {
     vec_ex();
     new_vec();
@@ -38,7 +53,7 @@ fn new_vec() {
 }
 
 fn vec_into() {
-    let my_vec: Vec<u8> = [1, 2, 3].into();
+    let my_vec: Vec<u8> = [1, 2, 3].into(); // convert an array into a Vec<u8>, you have to specify the type otherwise compiler don't know what type to choose
     let my_vec2: Vec<_> = [9, 0, 4].into(); // Vec<_> means "choose the Vec type for me"
                                             // Rust will choose Vec<i32>
     println!("{:?}\n{:?}", my_vec, my_vec2);

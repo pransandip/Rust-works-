@@ -55,7 +55,7 @@ fn main() {
     // overflow
     let mut x: i8 = 10;
 
-    // If you have run time logic compiler not going to check it
+    // ! If you have run time logic compiler not going to check it
     for _i in 0..1000 {
         x = x + 100;
     }

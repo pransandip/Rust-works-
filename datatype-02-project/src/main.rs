@@ -7,7 +7,7 @@
 * Rust has two primitive compound types: tuples and arrays.
 */
 
-// 1. Tuple is fixed length sequence of elements that is imutable
+// 1. Tuple is fixed length sequence of elements that is immutable
 // 2. arrays have to have same element inside
 
 /*
@@ -15,6 +15,24 @@
  * () nothing is going on
  * ! = macro = super function, functions that write code
 */
+
+fn print_char() {
+    let letter = 'a';
+    println!("{:⁙^11}", letter);
+}
+
+fn print_box() {
+    let letter = 'a';
+    let title = "TODAY'S NEWS";
+    println!("{:-^30}", title); // no variable name, pad with -, put in centre, 30 characters long
+
+    let bar = "|";
+    println!("{: <10}{:⁙^11}{: >10}", bar, letter, bar); // no variable name, pad with space, 15 characters each, one to the left, one to the right
+
+    let a = "SEOUL";
+    let b = "TOKYO";
+    println!("{city1:-<15}{city2:->15}", city1 = a, city2 = b); // variable names city1 and city2, pad with -, one to the left, one to the right
+}
 
 fn main() {
     // Note this is a print! not println!
@@ -29,7 +47,7 @@ fn main() {
         city3 = "Tokyo",
         country = "India",
     );
-    println!("{:?}", b"This"); // turn strings into bytes
+    println!("string in bytes: {:?}", b"This"); // turn strings into bytes
 
     for byte in "This".as_bytes() {
         print!("{},", byte);
@@ -48,4 +66,7 @@ fn main() {
         "Binary: {:b}, hexadecimal: {:x}, octal: {:o}",
         number, number, number
     );
+
+    print_char();
+    print_box();
 }

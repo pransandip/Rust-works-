@@ -7,11 +7,11 @@
 * Rust has two primitive compound types: tuples and arrays.
 */
 
-// 1. Tuple is fixed length sequence of elements that is imutable
+// 1. Tuple is fixed length sequence of elements that is immutable
 // 2. arrays have to have same element inside
 
 /*
-* Rust has scaler and compound datatypes
+* Rust has scaler and compound datatype
 * By default int in rust is i32 bit
 * By default float in rust is f64 bit
 * u8: 0 to 2^8 - 1 = 0 to 255 range of numbers you can represent
@@ -34,7 +34,7 @@ fn datatypes() {
     println!("{}, {}, {}", letter, !true_or_false, floating_point);
 }
 
-// tuple is a fixed lenght sequence of element that is immutable
+// tuple is a fixed length sequence of element that is immutable
 fn tuples() {
     let mut tup1: (i32, bool, char) = (1, true, 'a');
     tup1.0 = 10;

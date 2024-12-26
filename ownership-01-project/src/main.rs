@@ -2,13 +2,15 @@
 // 1. Each value in rust has a variable that's called its owner, means one variable one owner.
 // 2. There can only be one owner at a time, means variable can't have two owner at the same time.
 // 3. When owner goes out of scope, the value will be dropped.
-// 4. Rust has a copy trait, a simple type stored on the stack such as (int boolean and char) this traits allows those types to be copied instead of move
+// 4. Rust has a copy trait, a simple type stored on the stack such as (int boolean and char) this
+//    traits allows those types to be copied instead of move
 
 // The Rules of References
 // 1. At any given time, you can have either one mutable reference
 // or any number of immutable reference.
-//
 // 2. References must always be valid.
+
+// OWNERSHIP = who owns a value
 
 fn main() {
     {

@@ -6,6 +6,10 @@ fn arr_of_str() {
     let arr2 = ["a"; 10];
     println!("{:?}", arr1);
     println!("{:?}", arr2);
+
+    for item in arr1.iter() {
+        println!("{}", item);
+    }
 }
 
 // Creates an iterator which gives the current iteration count as well as the next value.

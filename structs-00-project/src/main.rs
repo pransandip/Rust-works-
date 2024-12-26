@@ -1,4 +1,6 @@
 // STRUCTS: your own type, your own data structure
+// struct = something AND something AND something
+// enum = something OR something OR something -> making one choice
 struct FileDirectory; // Unit Struct
 
 #[derive(Debug)]
@@ -8,7 +10,7 @@ struct Color(u8, u8, u8); // Tuple Struct
 struct SizeAndColor {
     size: u32,
     color: Color,
-} // Named Struct
+} // Named Struct (It's because variable has name)
 
 fn main() {
     let _my_directory = FileDirectory;

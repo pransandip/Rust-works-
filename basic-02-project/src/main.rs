@@ -8,7 +8,8 @@
 */
 
 // 1. Tuple is fixed length sequence of elements that is immutable
-// 2. arrays have to have same element inside
+// 2. Tuple can have multiple types
+// 3. Arrays have to have same element inside, arrays are fixed length
 
 /*
 * Rust has scaler and compound datatype
@@ -18,6 +19,12 @@
 * i8: -2^7 to 2^7 - 1 = -128 to 127 range of numbers you can represent
 */
 
+// Type Inference
+fn type_inference() {
+    let my_num = 1_______0_______8__________u8;
+    println!("my_num: {}", my_num)
+}
+
 fn arrays() {
     let mut arr: [i32; 5] = [1, 2, 3, 4, 5];
     arr[4] = 6;
@@ -25,13 +32,6 @@ fn arrays() {
 
     let byte = [0; 8]; // length of arr is 8 and all elements are 0
     println!("2nd element of byte array is: {}", byte[1]);
-}
-
-fn datatypes() {
-    let letter = 'a';
-    let true_or_false = true;
-    let floating_point: f32 = 10.39;
-    println!("{}, {}, {}", letter, !true_or_false, floating_point);
 }
 
 // tuple is a fixed length sequence of element that is immutable
@@ -45,12 +45,28 @@ fn tuples() {
     println!("name is: {} and weight: {}kg", name, weight)
 }
 
+fn tuples_2() {
+    let random_tuple: (u8, u8, &str, [i8; 3], Vec<u8>, f32) =
+        (7, 8, "My name is sandy", [1, 2, 3], vec![3, 4], 10.5);
+
+    let (_a, b, _c, _d, _e, _f) = random_tuple.clone();
+
+    println!("{:?}", random_tuple);
+    println!("{:?}", random_tuple.3);
+    println!("{}", b);
+}
+
+// Destructuring
+fn destructure_vec() {
+    let str_vec = vec!["one", "two", "three"];
+    let (a, b, _) = (str_vec[0], str_vec[1], str_vec[2]); // don't give it a name not going to use it
+    println!("a: {}, b: {}", a, b);
+}
+
 fn main() {
+    type_inference();
     arrays();
     tuples();
-    datatypes();
-
-    //Type Inference
-    let my_num = 1_______0_______8__________u8;
-    println!("my_num: {}", my_num)
+    tuples_2();
+    destructure_vec();
 }

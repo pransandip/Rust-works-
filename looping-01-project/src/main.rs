@@ -1,14 +1,5 @@
 use std::ops::{Range, RangeInclusive};
 
-fn main() {
-    check_equal();
-    print_numbers();
-    print_char();
-    looping();
-    conditional_loop();
-    array_looping();
-}
-
 fn check_equal() {
     assert_eq!((1..5), Range { start: 1, end: 5 });
     assert_eq!((1..=5), RangeInclusive::new(1, 5));
@@ -67,4 +58,13 @@ fn array_looping() {
     for element in a.iter() {
         println!("The value is: {}", element);
     }
+}
+
+fn main() {
+    check_equal();
+    print_numbers();
+    print_char();
+    looping();
+    conditional_loop();
+    array_looping();
 }

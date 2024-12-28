@@ -17,7 +17,7 @@ fn main() {
     };
 
     println!(
-        "capital: {}, population: {}, leader nmae: {}",
+        "capital: {}, population: {}, leader name: {}",
         india.capital, india.population, india.leader_name
     );
 

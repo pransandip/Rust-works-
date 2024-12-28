@@ -6,6 +6,7 @@ fn check_equal() {
     println!("success!");
 }
 
+// Exclusive range 0 to 9
 fn print_numbers() {
     for i in 0..10 {
         println!("{}", i);

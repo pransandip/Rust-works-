@@ -43,7 +43,7 @@ fn check_true_false() {
 }
 
 // unit type
-/* Unit type doesn't hold any value means 0 bytes */
+// Unit type doesn't hold any value means 0 bytes
 
 fn check_unit_type() {
     let v: () = ();

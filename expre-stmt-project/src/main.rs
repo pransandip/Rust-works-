@@ -13,21 +13,21 @@ fn a() {
     println!("number: {}", number);
 }
 
+// expression
+fn add_numbers(x: i32, y: i32) -> i32 {
+    x + y
+}
+
 fn b() {
     let result = add_numbers(20, 30); // expression
     println!("result: {}", result);
 }
 
-// Expression
-fn add_numbers(x: i32, y: i32) -> i32 {
-    x + y
-}
-
-// the trait `std::fmt::Display` is not implemented for `()`
+// The trait `std::fmt::Display` is not implemented for `()`
 // () does not have the power of Display
 // Trait = powers for types
-
 fn c() {
+    // statement
     let my_num = {
         let _second_num = 9;
     };

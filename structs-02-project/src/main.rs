@@ -34,7 +34,7 @@ fn rectangle_two() {
     };
 
     println!(
-        "The area of the rectangle is {} square pixles.",
+        "The area of the rectangle is {} square pixels.",
         area(&rect)
     );
 

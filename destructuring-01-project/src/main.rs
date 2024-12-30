@@ -72,6 +72,7 @@ fn destructuring_struct() {
     } = papa_doc;
 
     println!("Name: {}, Real Name: {}", nm, rnm);
+    println!("Height: {}, Happy: {}", papa_doc.height, papa_doc.happy);
 }
 
 fn main() {

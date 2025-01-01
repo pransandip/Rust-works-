@@ -2,6 +2,8 @@
 // generics = can be one type, can be another type
 // generic = concrete = one type
 
+// Till now we only used functions with concrete types like i32, f64, etc.
+
 // T, U, V - one capital letter in rust mean generic
 // monomorphic = make into one form
 // polymorphic = more then one form
@@ -13,7 +15,6 @@ use std::fmt::Display;
 //     number: u8,
 // }
 
-// we only used functions with concrete types
 fn return_thing<T>(thing: T) -> T {
     return thing;
 }

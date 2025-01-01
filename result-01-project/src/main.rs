@@ -1,4 +1,4 @@
-//-------- RESULT --------//
+//-------------- RESULT -------------//
 
 // Option == maybe there's something, maybe there's nothing
 // Result == maybe it will work, or maybe it will fail

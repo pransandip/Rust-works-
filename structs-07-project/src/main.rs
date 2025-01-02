@@ -1,6 +1,6 @@
 use std::fmt;
 
-// A structure holding two numbers.. `Debug` will be derived so the results can be contrasted with `Display`.
+// A structure holding two numbers. `Debug` will be derived so the results can be contrasted with `Display`.
 #[derive(Debug)]
 struct MinMax(i64, i64);
 

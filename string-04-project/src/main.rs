@@ -20,33 +20,11 @@
 */
 
 fn main() {
-    explain_string();
-    print_character();
-}
-
-fn explain_string() {
     // Creating a String from a string literal
-    let mut s = String::from("hello"); // s owns the data "hello" on the heap
+    let mut txt: String = String::from("hello"); // txt owns the data "hello" on the heap
 
     // Appending to a String
-    s.push_str(", world!"); // s can grow and change its content
+    txt.push_str(", world"); // txt can grow and change its content
 
-    // Creating a &str from a string literal
-    let hello = "hello"; // hello is a &str that points to the data "hello" in static memory
-
-    // Slicing a &str
-    let world = &hello[1..4]; // world is a &str that points to a part of hello's data
-
-    println!("s is {}, world = {}", s, world);
-}
-
-fn print_character() {
-    let greeting: String = String::from("hello sandip");
-
-    let char1 = greeting.chars().nth(0);
-
-    match char1 {
-        Some(c) => println!("{}", c),
-        None => println!("No character is index 0"),
-    }
+    println!(r"txt is {}", txt);
 }

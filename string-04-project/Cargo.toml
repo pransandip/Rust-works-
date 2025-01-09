@@ -1,0 +1,6 @@
+[package]
+name = "string-04-project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

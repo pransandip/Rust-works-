@@ -1,5 +1,4 @@
 // use = import
-
 enum Mood {
     Happy,
     NotBad,
